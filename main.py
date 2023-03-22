@@ -12,7 +12,7 @@ bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
 
-
+global step = 0
 
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
